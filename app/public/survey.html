@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Page</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Jquery plugin Chosen  -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script> -->
+
+</head>
+<body>
+
+  <div class="container">
+
+    <h1><i class="fa fa-file-text-o"></i>  Survey Questions</h1>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12">
+       <form role="form" id="survey-form">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="font-size: 24px">About You</h3>
+          </div>
+          <div class="panel-body">
+              <div class="form-group">
+                <label for="name" style="font-size: 18px">Name (Required)</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="photo" style="font-size: 18px">Link to Photo Image (Required)</label>
+                <input type="url" class="form-control" id="photo" required>
+              </div>
+          </div>
+        </div>
+      </form>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="font-size: 24px">Questionaire</h3>
+          </div>
+          <div class="panel-body">
+            <div>
+                <h4><strong>Q1. You find it difficult to introduce yourself to other people.</strong></h4>
+                <select id="q1" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q2. You often get so lost in thoughts that you ignore or forget your surroundings.</strong></h4>
+                <!-- <select data-placeholder="" class="chosen-select" id="q2" form="survey-form" required> -->
+                <select id="q2" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q3. You try to respond to your e-mails as soon as possible and cannot stand a messy inbox.</strong></h4>
+                <select id="q3" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q4. You find it easy to stay relaxed and focused even when there is some pressure.</strong></h4>
+                <select id="q4" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q5. You do not usually initiate conversations.</strong></h4>
+                <select id="q5" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q6. You rarely do something just out of sheer curiosity.</strong></h4>
+                <select id="q6" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q7. Being organized is more important to you than being adaptable.</strong></h4>
+                <select id="q7" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q8. You feel superior to other people.</strong></h4>
+                <select id="q8" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q9. You often feel as if you have to justify yourself to other people.</strong></h4>
+                <select id="q9" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h4><strong>Q10. You are usually highly motivated and energetic.</strong></h4>
+                <select id="q10" form="survey-form" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+              
+          </div>
+        </div>
+
+        <button type="submit" form="survey-form" class="btn btn-primary btn-lg btn-block submit"><i class="fa fa-check-circle"></i> Submit</button>
+    <!--   </form> -->
+ 
+        <hr>
+
+        <div class="container">
+          <a href="/api/friends">API Friends List</a> | <a href="https://github.com/yxcv5/FriendFinder">GitHub Repo</a>
+        </div>
+
+        <br>
+        <br>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div id="matchModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 class="modal-title"><strong>Best Match</strong></h2>
+      </div>
+      <div class="modal-body">
+        <h2 id="matchName"></h2>
+        <img id="matchPhoto" src="" style ="width: 90%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script type="text/javascript">
+    
+    $(".submit").on("click", function(event) {
+      event.preventDefault();
+
+      var scores = [];
+      for (var i=1; i<11; i++) {
+        scores.push($("#q"+i).val());
+      }
+
+      console.log(scores);
+
+      var results = {
+        'name': $("#name").val().trim(),
+        'photoURL': $("#photo").val().trim(),
+        'opts': scores
+      };
+
+      var valid = validateForm(results);
+      if(!valid) {
+        alert("Please fill out all fields before submitting!");
+      }
+      else {
+        $.post("api/friends", results, function(match) {
+          $("#matchName").text(match.name);
+          $("#matchPhoto").attr("src", match.photo);
+          $("#matchModal").modal({show: true});
+
+          // Clear the form
+          $("#name").val("");
+          $("#photo").val("");
+          for (var i=1; i<11; i++) {
+            $("#q"+i).val("");
+          }
+        });
+      }
+    });
+
+    function validateForm(formData) {
+
+      if(!formData.name || !formData.photoURL)
+        return false;
+
+      var opts = formData.opts;
+      for(var i=0; i<10; i++) {
+        if(!opts[i])
+          return false;
+      }
+
+      return true;
+    }
+
+</script>
+
+</body>
+</html>
+
